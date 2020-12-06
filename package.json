@@ -13,11 +13,6 @@
     "url": "https://github.com/tylerlong/lambda-docker-test/issues"
   },
   "homepage": "https://github.com/tylerlong/lambda-docker-test#readme",
-  "dependencies": {
-    "faker": "^5.1.0",
-    "get-stream": "^6.0.0",
-    "pdfkit": "^0.11.0"
-  },
   "devDependencies": {
     "serverless": "^2.15.0"
   }

@@ -24,7 +24,7 @@ package:
 
 functions:
   test:
-    image: 524621635179.dkr.ecr.us-east-1.amazonaws.com/random-letter@sha256:ba108c6c911a96590327bbba75e31486e981cc4fc408c36b07499db0dc837242
+    image: 524621635179.dkr.ecr.us-east-1.amazonaws.com/random-letter@sha256:b84d2886422fb8a92372b95c740f680a8c83f67214e6802615d2e1051b5a49bd
     events:
       - http: 'ANY /test'
 
