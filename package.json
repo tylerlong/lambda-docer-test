@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Use docker in AWS Lambda.",
   "main": "app.js",
+  "scripts": {
+    "deploy": "source deploy.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylerlong/lambda-docker-test.git"

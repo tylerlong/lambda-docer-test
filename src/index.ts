@@ -1,10 +1,10 @@
 import express from 'express';
 import serverlessHTTP from 'serverless-http';
 
-const app = express();
+const expressApp = express();
 
-app.get('/test', async (req, res) => {
+expressApp.get('/test', async (req, res) => {
   return res.send('Hello world');
 });
 
-export const lambdaHandler = serverlessHTTP(app);
+export const app = serverlessHTTP(expressApp);

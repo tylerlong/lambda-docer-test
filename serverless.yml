@@ -24,7 +24,7 @@ package:
 
 functions:
   test:
-    image: 524621635179.dkr.ecr.us-east-1.amazonaws.com/random-letter@sha256:0d486640a87c55af8f7d62c666f2eb475ca441d95baef9dca4a4b878a30f2aa6
+    image: 524621635179.dkr.ecr.us-east-1.amazonaws.com/random-letter@sha256:fe554e88b8bf8a15f1a4de07445fe450c20b3336a3031b5031d040de9ac57fc8
     events:
       - http: 'ANY /{proxy+}'
 
