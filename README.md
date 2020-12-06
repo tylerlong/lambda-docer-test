@@ -10,9 +10,10 @@ Ref: https://aws.amazon.com/blogs/aws/new-for-aws-lambda-container-image-support
 ### The hard way
 
 - docker build -t random-letter .
-- docker tag random-letter:latest 123456789.dkr.ecr.us-east-1.amazonaws.com/random-letter:latest
-- aws ecr get-login-password | docker login --username AWS --password-stdin 123456789.dkr.ecr.us-east-1.amazonaws.com
-- docker push 123456789.dkr.ecr.us-east-1.amazonaws.com/random-letter:latest
+- push to remote:
+    - aws ecr get-login-password | docker login --username AWS --password-stdin 123456789.dkr.ecr.us-east-1.amazonaws.com
+    - docker tag random-letter:latest 123456789.dkr.ecr.us-east-1.amazonaws.com/random-letter:latest
+    - docker push 123456789.dkr.ecr.us-east-1.amazonaws.com/random-letter:latest
 - update hash in serverless.yml
 - yarn sls deploy
 
